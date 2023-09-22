@@ -32,16 +32,16 @@ CREATE TABLE documentType(
 	CONSTRAINT PK_idDocuType PRIMARY KEY(id)
 );
 
-CREATE TABLE presentationType(
-	id int AUTO_INCREMENT,
-	name VARCHAR(50) UNIQUE NOT NULL,
-	CONSTRAINT PK_idPresenType PRIMARY KEY(id)
-);
-
 CREATE TABLE rolePerson(
 	id int AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL UNIQUE,
 	CONSTRAINT PK_idRolPer PRIMARY KEY(id)
+);
+
+CREATE TABLE presentationType(
+	id int AUTO_INCREMENT,
+	name VARCHAR(50) UNIQUE NOT NULL,
+	CONSTRAINT PK_idPresenType PRIMARY KEY(id)
 );
 
 CREATE TABLE paymentMethod(
@@ -195,6 +195,8 @@ INSERT INTO city (name, idDepartFK) VALUES ("Bucaramanga", 27), ("Barrancabermej
 INSERT INTO city (name, idDepartFK) VALUES ("Medellin",2),("Guatape",2),("Itagui",2);
 
 INSERT INTO city (name, idDepartFK) VALUES ("Santa Marta",19),("Taganga",19),("Arataca",19);
+
+INSERT 
 
 
 
